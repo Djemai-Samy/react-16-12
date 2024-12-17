@@ -1,5 +1,5 @@
 import Footer from './composants/containers/Footer/Footer';
-import { Header } from './composants/containers/Header/Header'; 
+import Header  from './composants/containers/Header/Header'; 
 function App() {
   return (
     <>
