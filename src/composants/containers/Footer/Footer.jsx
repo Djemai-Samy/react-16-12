@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer>
             <p>Copyright 2024</p>
-            <Bouton />
+            <Bouton couleur="blue"/>
         </footer>
     )
 }

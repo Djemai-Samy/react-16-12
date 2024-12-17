@@ -1,7 +1,10 @@
 import Footer from './composants/containers/Footer/Footer';
 import Header from './composants/containers/Header/Header';
+import Player from './composants/containers/Player/Player';
 import User from './composants/containers/User/User';
 import Bouton from './composants/ui/Bouton/Bouton';
+import "./index.css";
+
 function App() {
   return (
     <>
@@ -10,7 +13,8 @@ function App() {
         <Bouton />
 
         <User />
-        
+
+        <Player />
         <Footer />
       </div>
     </>
