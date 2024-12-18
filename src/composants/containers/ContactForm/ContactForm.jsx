@@ -2,7 +2,6 @@ import { useState } from "react";
 import Bouton from "../../ui/Bouton/Bouton";
 
 // Two Way Binding: Liaison dans les deux sens
-
 export default function ContactForm() {
 	// Variable pour stocker les données entrées dans le champs
 	const [fullNameInput, setFullNameInput] = useState('Samy');
