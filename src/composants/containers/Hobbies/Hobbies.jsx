@@ -1,17 +1,9 @@
-export default function Hobbies() {
-  const hobbiesFromDB = [
-    {
-      id: "aze121s2df21",
-      nom: "HTML"
-    },
-    {
-      id: "lmfkgh41fgh45fgh",
-      nom: "CSS"
-    }
-  ];
+import PropTypes from "prop-types"
+
+export default function Hobbies({ hobbies }) {
   return (
     <ul>
-      {hobbiesFromDB.map((hobby) => {
+      {hobbies.map((hobby) => {
         return (
           <li
             key={hobby.id}
@@ -25,4 +17,7 @@ export default function Hobbies() {
       })}
     </ul>
   )
+}
+Hobbies.propTypes = {
+  hobbies: PropTypes.array.isRequired,
 }
