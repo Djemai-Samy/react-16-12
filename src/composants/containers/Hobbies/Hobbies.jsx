@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import Bouton from '../../ui/Bouton/Bouton'
 import { useContext, useState } from "react"
 import { UtilisateurContext } from "../../../App"
@@ -48,9 +47,7 @@ export default function Hobbies() {
 
   )
 }
-Hobbies.propTypes = {
-  hobbies: PropTypes.array.isRequired,
-}
+
 
 // Exercice
 // Ajouter un champs controler dans le composant pour ajouter des hobbies.

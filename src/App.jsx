@@ -4,8 +4,12 @@ import Footer from './composants/containers/Footer/Footer';
 import Header from './composants/containers/Header/Header';
 import User from './composants/containers/User/User';
 import "./index.css";
+import GOT from './composants/containers/GOT/GOT';
 
 export const UtilisateurContext = createContext();
+
+// On utilise les Contexte Globaux:
+// User, Langue, Theme, Configuration
 
 function App() {
   const user = {
@@ -17,14 +21,17 @@ function App() {
       { id: 'react', nom: "React" }]
   }
 
+
   return (
     <UtilisateurContext.Provider value={user}>
-      <div>
+      <div id='container'>
         <Header />
+
+        <GOT />
 
         <ContactForm />
 
-        <User/>
+        <User />
         <Footer />
       </div>
     </UtilisateurContext.Provider>
