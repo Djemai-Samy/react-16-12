@@ -1,15 +1,17 @@
 import PropTypes from "prop-types"
 import Bouton from '../../ui/Bouton/Bouton'
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { UtilisateurContext } from "../../../App"
 
 // React se repose sur le concept d'immutabilité
+export default function Hobbies() {
 
-export default function Hobbies({ hobbies }) {
+  const user = useContext(UtilisateurContext);
 
   const [hobbyInput, setHobbyInput] = useState('')
   const [hobbyError, setHobbyError] = useState('')
 
-  const [newHobbies, setNewHobbies] = useState(hobbies);
+  const [newHobbies, setNewHobbies] = useState(user.hobbies);
 
   function gereHobbyInput(e) {
     setHobbyInput(e.target.value);

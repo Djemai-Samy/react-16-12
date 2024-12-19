@@ -1,7 +1,10 @@
 import PropTypes from "prop-types"
+import { useContext } from "react"
+import { UtilisateurContext } from "../../../App"
 
-export default function FirstName({ prenom }) {
-    return (<p>{prenom}</p>)
+export default function FirstName() {
+    const user = useContext(UtilisateurContext)
+    return (<p>{user.prenom}</p>)
 }
 
 FirstName.propTypes = {

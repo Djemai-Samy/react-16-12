@@ -1,8 +1,11 @@
+import { createContext } from 'react';
 import ContactForm from './composants/containers/ContactForm/ContactForm';
 import Footer from './composants/containers/Footer/Footer';
 import Header from './composants/containers/Header/Header';
 import User from './composants/containers/User/User';
 import "./index.css";
+
+export const UtilisateurContext = createContext();
 
 function App() {
   const user = {
@@ -15,16 +18,16 @@ function App() {
   }
 
   return (
-    <>
+    <UtilisateurContext.Provider value={user}>
       <div>
         <Header />
 
         <ContactForm />
 
-        <User utilisateur={user} />
+        <User/>
         <Footer />
       </div>
-    </>
+    </UtilisateurContext.Provider>
   )
 }
 
