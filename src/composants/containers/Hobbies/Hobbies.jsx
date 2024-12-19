@@ -1,6 +1,9 @@
 import PropTypes from "prop-types"
 import Bouton from '../../ui/Bouton/Bouton'
 import { useState } from "react"
+
+// React se repose sur le concept d'immutabilité
+
 export default function Hobbies({ hobbies }) {
 
   const [hobbyInput, setHobbyInput] = useState('')

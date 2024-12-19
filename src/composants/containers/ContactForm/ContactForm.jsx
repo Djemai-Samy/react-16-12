@@ -51,7 +51,9 @@ export default function ContactForm() {
 			<textarea
 				className="bg-neutral-800 p-2 w-full"
 				onChange={gereMessage}
-				placeholder="Entrez un message">{messageInput}</textarea>
+				placeholder="Entrez un message"
+				value={messageInput}
+			></textarea>
 			<p>{messageError}</p>
 			<Bouton gereClique={submit}>Envoyer le message</Bouton>
 		</div>
